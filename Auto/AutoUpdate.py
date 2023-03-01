@@ -13,6 +13,7 @@ def getUnityPath():
     return r
 
 def updateSVN():
+    # 没有外链库的Revert操作
     subprocess.check_call("svn update --accept=theirs-conflict", shell=True)
 
 def updateGit():
